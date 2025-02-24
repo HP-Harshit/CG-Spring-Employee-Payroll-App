@@ -4,49 +4,53 @@ import com.bridgelabz.employee_payroll_app.dto.EmployeeDTO;
 import com.bridgelabz.employee_payroll_app.model.Employee;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.concurrent.atomic.AtomicLong;
 
 @Service
 public class EmployeeService implements IEmployeeService {
-    private final Map<Long, Employee> employeeMap = new HashMap<>();
-    private long currentId = 1;
+    private final List<Employee> employeeList = new ArrayList<>();
+    private final AtomicLong idCounter = new AtomicLong();
 
     @Override
     public Employee createEmployee(EmployeeDTO employeeDTO) {
         Employee employee = new Employee();
-        employee.setId(currentId++);
+        employee.setId(idCounter.incrementAndGet());
         employee.setName(employeeDTO.getName());
         employee.setSalary(employeeDTO.getSalary());
-        employeeMap.put(employee.getId(), employee);
+        employeeList.add(employee);
         System.out.println("Created employee: " + employee);
         return employee;
     }
 
     @Override
     public Optional<Employee> getEmployeeById(Long id) {
-        return Optional.ofNullable(employeeMap.get(id));
+        return employeeList.stream().filter(employee -> employee.getId().equals(id)).findFirst();
     }
 
     @Override
     public List<Employee> getAllEmployees() {
-        return new ArrayList<>(employeeMap.values());
+        return new ArrayList<>(employeeList);
     }
 
     @Override
     public Employee updateEmployee(Long id, EmployeeDTO employeeDTO) {
-        Employee employee = employeeMap.get(id);
-        if (employee != null) {
+        Optional<Employee> employeeOptional = getEmployeeById(id);
+        if (employeeOptional.isPresent()) {
+            Employee employee = employeeOptional.get();
             employee.setName(employeeDTO.getName());
             employee.setSalary(employeeDTO.getSalary());
-            employeeMap.put(employee.getId(), employee);
             System.out.println("Updated employee: " + employee);
+            return employee;
         }
-        return employee;
+        return null;
     }
 
     @Override
     public void deleteEmployee(Long id) {
-        employeeMap.remove(id);
+        employeeList.removeIf(employee -> employee.getId().equals(id));
         System.out.println("Deleted employee with ID: " + id);
     }
 }

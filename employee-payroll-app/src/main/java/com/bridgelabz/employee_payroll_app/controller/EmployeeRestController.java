@@ -2,21 +2,20 @@ package com.bridgelabz.employee_payroll_app.controller;
 
 import com.bridgelabz.employee_payroll_app.dto.EmployeeDTO;
 import com.bridgelabz.employee_payroll_app.model.Employee;
-import com.bridgelabz.employee_payroll_app.service.EmployeeService;
+import com.bridgelabz.employee_payroll_app.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeeRestController {
 
-    private final EmployeeService employeeService;
+    private final IEmployeeService employeeService;
 
     @Autowired
-    public EmployeeRestController(EmployeeService employeeService) {
+    public EmployeeRestController(IEmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
@@ -26,8 +25,8 @@ public class EmployeeRestController {
     }
 
     @GetMapping("/get/{id}")
-    public Optional<Employee> getEmployeeById(@PathVariable Long id) {
-        return employeeService.getEmployeeById(id);
+    public Employee getEmployeeById(@PathVariable Long id) {
+        return employeeService.getEmployeeById(id).orElse(null);
     }
 
     @PostMapping("/create")
