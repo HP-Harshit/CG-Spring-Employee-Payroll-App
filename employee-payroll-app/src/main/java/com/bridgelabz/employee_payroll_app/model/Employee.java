@@ -1,7 +1,10 @@
 package com.bridgelabz.employee_payroll_app.model;
 
-
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name = "employee_payroll")
