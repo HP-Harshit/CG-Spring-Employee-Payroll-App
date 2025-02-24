@@ -13,19 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Employee Payroll App</name>
 	<description>Spring Boot Employee Payroll App</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -67,14 +54,13 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		<!-- H2 Database Dependency -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -83,5 +69,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
