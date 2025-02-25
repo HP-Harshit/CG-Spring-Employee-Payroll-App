@@ -1,0 +1,47 @@
+2025-02-25 10:39:47 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 6380 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-25 10:39:47 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25 10:39:47 - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 10:39:47 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-25 10:39:47 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-25 10:39:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-25 10:39:48 - Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.
+2025-02-25 10:39:50 - Tomcat initialized with port 8080 (http)
+2025-02-25 10:39:51 - Starting service [Tomcat]
+2025-02-25 10:39:51 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 10:39:51 - Initializing Spring embedded WebApplicationContext
+2025-02-25 10:39:51 - Root WebApplicationContext: initialization completed in 3750 ms
+2025-02-25 10:39:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25 10:39:51 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25 10:39:51 - HHH000026: Second-level cache disabled
+2025-02-25 10:39:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-25 10:39:52 - HikariPool-1 - Starting...
+2025-02-25 10:39:53 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@145d76f2
+2025-02-25 10:39:53 - HikariPool-1 - Start completed.
+2025-02-25 10:39:53 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-25 10:39:53 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25 10:39:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25 10:39:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25 10:39:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25 10:39:56 - LiveReload server is running on port 35729
+2025-02-25 10:39:56 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-25 10:39:56 - Started EmployeePayrollAppApplication in 10.897 seconds (process running for 12.042)
+2025-02-25 10:41:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 10:41:49 - Initializing Servlet 'dispatcherServlet'
+2025-02-25 10:41:49 - Completed initialization in 2 ms
+2025-02-25 10:41:49 - Retrieving all employees
+2025-02-25 10:41:55 - Retrieved employee with ID 9: null
+2025-02-25 10:42:03 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "j"]
+2025-02-25 10:42:08 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@3fbf2ef
+2025-02-25 10:42:19 - Retrieving all employees
+2025-02-25 10:42:22 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 10:42:23 - Graceful shutdown complete
+2025-02-25 10:42:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25 10:42:23 - HikariPool-1 - Shutdown initiated...
+2025-02-25 10:42:23 - HikariPool-1 - Shutdown completed.
