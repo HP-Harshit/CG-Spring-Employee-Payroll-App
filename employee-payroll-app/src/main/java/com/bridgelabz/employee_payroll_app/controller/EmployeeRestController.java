@@ -1,6 +1,7 @@
 package com.bridgelabz.employee_payroll_app.controller;
 
 import com.bridgelabz.employee_payroll_app.dto.EmployeeDTO;
+import com.bridgelabz.employee_payroll_app.exception.EmployeeNotFoundException;
 import com.bridgelabz.employee_payroll_app.model.Employee;
 import com.bridgelabz.employee_payroll_app.service.IEmployeeService;
 import jakarta.validation.Valid;
@@ -27,7 +28,7 @@ public class EmployeeRestController {
 
     @GetMapping("/get/{id}")
     public Employee getEmployeeById(@PathVariable Long id) {
-        return employeeService.getEmployeeById(id).orElse(null);
+        return employeeService.getEmployeeById(id).orElseThrow(() -> new EmployeeNotFoundException("Employee with ID " + id + " not found"));
     }
 
     @PostMapping("/create")
