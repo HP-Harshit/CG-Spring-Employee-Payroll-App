@@ -269,3 +269,51 @@
 2025-02-25 11:19:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-02-25 11:19:08 - HikariPool-1 - Shutdown initiated...
 2025-02-25 11:19:08 - HikariPool-1 - Shutdown completed.
+2025-02-25 11:22:40 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 22760 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-25 11:22:40 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25 11:22:40 - The following 1 profile is active: "dev"
+2025-02-25 11:22:40 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-25 11:22:40 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-25 11:22:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-25 11:22:42 - Finished Spring Data repository scanning in 40 ms. Found 0 JPA repository interfaces.
+2025-02-25 11:22:43 - Tomcat initialized with port 8080 (http)
+2025-02-25 11:22:43 - Starting service [Tomcat]
+2025-02-25 11:22:43 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 11:22:43 - Initializing Spring embedded WebApplicationContext
+2025-02-25 11:22:43 - Root WebApplicationContext: initialization completed in 3141 ms
+2025-02-25 11:22:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25 11:22:44 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25 11:22:44 - HHH000026: Second-level cache disabled
+2025-02-25 11:22:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-25 11:22:45 - HikariPool-1 - Starting...
+2025-02-25 11:22:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d68b262
+2025-02-25 11:22:46 - HikariPool-1 - Start completed.
+2025-02-25 11:22:46 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-25 11:22:46 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25 11:22:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25 11:22:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25 11:22:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25 11:22:49 - LiveReload server is running on port 35729
+2025-02-25 11:22:49 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-25 11:22:49 - Started EmployeePayrollAppApplication in 9.864 seconds (process running for 11.039)
+2025-02-25 11:22:53 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 11:22:53 - Initializing Servlet 'dispatcherServlet'
+2025-02-25 11:22:53 - Completed initialization in 2 ms
+2025-02-25 11:22:54 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [johnDoe]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@3dbeebbe,^[A-Z][a-zA-Z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
+2025-02-25 11:22:54 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [John123]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@3dbeebbe,^[A-Z][a-zA-Z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
+2025-02-25 11:23:06 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@f714580
+2025-02-25 11:23:11 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@2d0501fd
+2025-02-25 11:23:16 - Retrieved employee with ID 1: com.bridgelabz.employee_payroll_app.model.Employee@f714580
+2025-02-25 11:23:16 - Updated employee: com.bridgelabz.employee_payroll_app.model.Employee@f714580
+2025-02-25 11:23:23 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 11:23:24 - Graceful shutdown complete
+2025-02-25 11:23:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25 11:23:24 - HikariPool-1 - Shutdown initiated...
+2025-02-25 11:23:24 - HikariPool-1 - Shutdown completed.
