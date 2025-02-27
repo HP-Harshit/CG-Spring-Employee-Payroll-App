@@ -52,5 +52,10 @@ public class EmployeeRestController {
         log.info("Deleting employee with ID: " + id);
         employeeService.deleteEmployee(id);
     }
-    
+
+    @GetMapping("/department/{department}")
+    public List<Employee> getEmployeesByDepartment(@PathVariable String department) {
+        log.info("Fetching employees from department: " + department);
+        return employeeService.getEmployeesByDepartment(department);
+    }
 }

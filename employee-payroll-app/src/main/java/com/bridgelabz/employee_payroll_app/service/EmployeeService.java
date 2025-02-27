@@ -69,4 +69,9 @@ public class EmployeeService implements IEmployeeService {
         log.info("Deleted employee with ID: " + id);
     }
 
+    @Override
+    public List<Employee> getEmployeesByDepartment(String department) {
+        log.info("Fetching employees from department: " + department);
+        return employeeRepository.findEmployeesByDepartment(department);
+    }
 }
