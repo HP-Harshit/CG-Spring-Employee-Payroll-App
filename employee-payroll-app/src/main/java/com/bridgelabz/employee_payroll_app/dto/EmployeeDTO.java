@@ -5,6 +5,9 @@ import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @Getter @Setter
 public class EmployeeDTO {
     private Long id;
@@ -14,4 +17,16 @@ public class EmployeeDTO {
     private String name;
 
     private Double salary;
+
+    @NotEmpty(message = "Gender is a required field and cannot be empty.")
+    private String gender;
+
+    private LocalDate startDate;
+
+    private String note;
+
+    private String profilePic;
+
+    @NotEmpty(message = "Department is a required field and cannot be empty.")
+    private List<String> department;
 }

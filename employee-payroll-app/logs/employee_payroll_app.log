@@ -1,24 +1,1071 @@
-2025-02-25 10:39:47 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 6380 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 10:39:47 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 10:39:47 - No active profile set, falling back to 1 default profile: "default"
-2025-02-25 10:39:47 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 10:39:47 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 10:39:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 10:39:48 - Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.
-2025-02-25 10:39:50 - Tomcat initialized with port 8080 (http)
-2025-02-25 10:39:51 - Starting service [Tomcat]
-2025-02-25 10:39:51 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 10:39:51 - Initializing Spring embedded WebApplicationContext
-2025-02-25 10:39:51 - Root WebApplicationContext: initialization completed in 3750 ms
-2025-02-25 10:39:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 10:39:51 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 10:39:51 - HHH000026: Second-level cache disabled
-2025-02-25 10:39:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 10:39:52 - HikariPool-1 - Starting...
-2025-02-25 10:39:53 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@145d76f2
-2025-02-25 10:39:53 - HikariPool-1 - Start completed.
-2025-02-25 10:39:53 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 10:39:53 - HHH10001005: Database info:
+2025-02-27 12:15:44 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 18540 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 12:15:44 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-27 12:15:44 - The following 1 profile is active: "dev"
+2025-02-27 12:15:44 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 12:15:44 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 12:15:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 12:15:46 - Finished Spring Data repository scanning in 36 ms. Found 0 JPA repository interfaces.
+2025-02-27 12:15:47 - Tomcat initialized with port 8080 (http)
+2025-02-27 12:15:47 - Starting service [Tomcat]
+2025-02-27 12:15:47 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 12:15:47 - Initializing Spring embedded WebApplicationContext
+2025-02-27 12:15:47 - Root WebApplicationContext: initialization completed in 2535 ms
+2025-02-27 12:15:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 12:15:47 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 12:15:47 - HHH000026: Second-level cache disabled
+2025-02-27 12:15:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 12:15:48 - HikariPool-1 - Starting...
+2025-02-27 12:15:50 - SQL Error: 1044, SQLState: 42000
+2025-02-27 12:15:50 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 12:15:50 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2025-02-27 12:15:50 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 12:15:50 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 12:15:51 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 12:15:51 - HikariPool-1 - Starting...
+2025-02-27 12:15:52 - SQL Error: 1044, SQLState: 42000
+2025-02-27 12:15:52 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 12:15:52 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 12:15:52 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 12:15:52 - Stopping service [Tomcat]
+2025-02-27 12:15:52 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 12:15:52 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+2025-02-27 12:18:05 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 10344 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 12:18:05 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-27 12:18:05 - The following 1 profile is active: "dev"
+2025-02-27 12:18:05 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 12:18:05 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 12:18:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 12:18:06 - Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2025-02-27 12:18:07 - Tomcat initialized with port 8080 (http)
+2025-02-27 12:18:07 - Starting service [Tomcat]
+2025-02-27 12:18:07 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 12:18:07 - Initializing Spring embedded WebApplicationContext
+2025-02-27 12:18:07 - Root WebApplicationContext: initialization completed in 2328 ms
+2025-02-27 12:18:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 12:18:08 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 12:18:08 - HHH000026: Second-level cache disabled
+2025-02-27 12:18:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 12:18:08 - HikariPool-1 - Starting...
+2025-02-27 12:18:10 - SQL Error: 1044, SQLState: 42000
+2025-02-27 12:18:10 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 12:18:10 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2025-02-27 12:18:10 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 12:18:10 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 12:18:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 12:18:11 - HikariPool-1 - Starting...
+2025-02-27 12:18:12 - SQL Error: 1044, SQLState: 42000
+2025-02-27 12:18:12 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 12:18:12 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 12:18:12 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 12:18:12 - Stopping service [Tomcat]
+2025-02-27 12:18:12 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 12:18:12 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+2025-02-27 12:20:08 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 16700 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 12:20:08 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-27 12:20:08 - The following 1 profile is active: "dev"
+2025-02-27 12:20:08 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 12:20:08 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 12:20:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 12:20:09 - Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2025-02-27 12:20:10 - Tomcat initialized with port 8080 (http)
+2025-02-27 12:20:10 - Starting service [Tomcat]
+2025-02-27 12:20:10 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 12:20:10 - Initializing Spring embedded WebApplicationContext
+2025-02-27 12:20:10 - Root WebApplicationContext: initialization completed in 2368 ms
+2025-02-27 12:20:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 12:20:11 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 12:20:11 - HHH000026: Second-level cache disabled
+2025-02-27 12:20:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 12:20:11 - HikariPool-1 - Starting...
+2025-02-27 12:20:13 - SQL Error: 1044, SQLState: 42000
+2025-02-27 12:20:13 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 12:20:13 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2025-02-27 12:20:13 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 12:20:13 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 12:20:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 12:20:14 - HikariPool-1 - Starting...
+2025-02-27 12:20:15 - SQL Error: 1044, SQLState: 42000
+2025-02-27 12:20:15 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 12:20:15 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 12:20:15 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 12:20:15 - Stopping service [Tomcat]
+2025-02-27 12:20:15 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 12:20:15 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+2025-02-27 15:03:11 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 14116 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:03:11 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-27 15:03:11 - The following 1 profile is active: "dev"
+2025-02-27 15:03:11 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:03:11 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:03:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:03:13 - Finished Spring Data repository scanning in 37 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:03:14 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:03:14 - Starting service [Tomcat]
+2025-02-27 15:03:14 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:03:14 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:03:14 - Root WebApplicationContext: initialization completed in 2684 ms
+2025-02-27 15:03:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:03:14 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:03:14 - HHH000026: Second-level cache disabled
+2025-02-27 15:03:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:03:15 - HikariPool-1 - Starting...
+2025-02-27 15:03:17 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:03:17 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:03:17 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2025-02-27 15:03:17 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:03:17 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 15:03:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:03:18 - HikariPool-1 - Starting...
+2025-02-27 15:03:19 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:03:19 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:03:19 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:03:19 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:03:19 - Stopping service [Tomcat]
+2025-02-27 15:03:19 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 15:03:19 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+2025-02-27 15:05:34 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 14848 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:05:34 - The following 1 profile is active: "default"
+2025-02-27 15:05:34 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:05:34 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:05:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:05:35 - Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:05:37 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:05:37 - Starting service [Tomcat]
+2025-02-27 15:05:37 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:05:37 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:05:37 - Root WebApplicationContext: initialization completed in 2839 ms
+2025-02-27 15:05:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:05:37 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:05:37 - HHH000026: Second-level cache disabled
+2025-02-27 15:05:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:05:38 - HikariPool-1 - Starting...
+2025-02-27 15:05:39 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:05:39 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:05:39 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2025-02-27 15:05:39 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:05:40 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 15:05:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:05:41 - HikariPool-1 - Starting...
+2025-02-27 15:05:42 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:05:42 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:05:42 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:05:42 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:05:42 - Stopping service [Tomcat]
+2025-02-27 15:05:42 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 15:05:42 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+2025-02-27 15:08:01 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 4900 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:08:01 - The following 1 profile is active: "default"
+2025-02-27 15:08:01 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:08:01 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:08:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:08:03 - Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:08:04 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:08:04 - Starting service [Tomcat]
+2025-02-27 15:08:04 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:08:04 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:08:04 - Root WebApplicationContext: initialization completed in 2409 ms
+2025-02-27 15:08:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:08:04 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:08:04 - HHH000026: Second-level cache disabled
+2025-02-27 15:08:05 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:08:05 - HikariPool-1 - Starting...
+2025-02-27 15:08:06 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:08:06 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:08:06 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2025-02-27 15:08:06 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:08:06 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 15:08:07 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:08:07 - HikariPool-1 - Starting...
+2025-02-27 15:08:08 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:08:08 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:08:08 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:08:08 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:08:08 - Stopping service [Tomcat]
+2025-02-27 15:08:08 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 15:08:08 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+2025-02-27 15:08:26 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 8640 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:08:26 - The following 1 profile is active: "default"
+2025-02-27 15:08:26 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:08:26 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:08:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:08:28 - Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:08:29 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:08:29 - Starting service [Tomcat]
+2025-02-27 15:08:29 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:08:29 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:08:29 - Root WebApplicationContext: initialization completed in 2492 ms
+2025-02-27 15:08:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:08:29 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:08:29 - HHH000026: Second-level cache disabled
+2025-02-27 15:08:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:08:30 - HikariPool-1 - Starting...
+2025-02-27 15:08:30 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30d958bc
+2025-02-27 15:08:30 - HikariPool-1 - Start completed.
+2025-02-27 15:08:30 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:08:31 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -26,46 +1073,37 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 10:39:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 10:39:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:39:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 10:39:56 - LiveReload server is running on port 35729
-2025-02-25 10:39:56 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 10:39:56 - Started EmployeePayrollAppApplication in 10.897 seconds (process running for 12.042)
-2025-02-25 10:41:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-25 10:41:49 - Initializing Servlet 'dispatcherServlet'
-2025-02-25 10:41:49 - Completed initialization in 2 ms
-2025-02-25 10:41:49 - Retrieving all employees
-2025-02-25 10:41:55 - Retrieved employee with ID 9: null
-2025-02-25 10:42:03 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "j"]
-2025-02-25 10:42:08 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@3fbf2ef
-2025-02-25 10:42:19 - Retrieving all employees
-2025-02-25 10:42:22 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 10:42:23 - Graceful shutdown complete
-2025-02-25 10:42:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:42:23 - HikariPool-1 - Shutdown initiated...
-2025-02-25 10:42:23 - HikariPool-1 - Shutdown completed.
-2025-02-25 10:47:57 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 21924 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 10:47:57 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 10:47:57 - The following 1 profile is active: "dev"
-2025-02-25 10:47:57 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 10:47:57 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 10:47:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 10:47:58 - Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
-2025-02-25 10:47:59 - Tomcat initialized with port 8080 (http)
-2025-02-25 10:47:59 - Starting service [Tomcat]
-2025-02-25 10:47:59 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 10:47:59 - Initializing Spring embedded WebApplicationContext
-2025-02-25 10:47:59 - Root WebApplicationContext: initialization completed in 2424 ms
-2025-02-25 10:48:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 10:48:00 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 10:48:00 - HHH000026: Second-level cache disabled
-2025-02-25 10:48:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 10:48:01 - HikariPool-1 - Starting...
-2025-02-25 10:48:01 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3544ec01
-2025-02-25 10:48:01 - HikariPool-1 - Start completed.
-2025-02-25 10:48:01 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 10:48:01 - HHH10001005: Database info:
+2025-02-27 15:08:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:08:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:08:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:08:33 - LiveReload server is running on port 35729
+2025-02-27 15:08:33 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 15:08:33 - Started EmployeePayrollAppApplication in 7.302 seconds (process running for 8.177)
+2025-02-27 15:08:48 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 15:08:48 - Graceful shutdown complete
+2025-02-27 15:08:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:08:48 - HikariPool-1 - Shutdown initiated...
+2025-02-27 15:08:48 - HikariPool-1 - Shutdown completed.
+2025-02-27 15:10:04 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 14736 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:10:04 - The following 1 profile is active: "default"
+2025-02-27 15:10:04 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:10:04 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:10:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:10:05 - Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:10:06 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:10:06 - Starting service [Tomcat]
+2025-02-27 15:10:06 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:10:06 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:10:06 - Root WebApplicationContext: initialization completed in 2344 ms
+2025-02-27 15:10:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:10:07 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:10:07 - HHH000026: Second-level cache disabled
+2025-02-27 15:10:07 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:10:07 - HikariPool-1 - Starting...
+2025-02-27 15:10:08 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@452b3cf3
+2025-02-27 15:10:08 - HikariPool-1 - Start completed.
+2025-02-27 15:10:08 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:10:08 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -73,38 +1111,37 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 10:48:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 10:48:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:48:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 10:48:03 - LiveReload server is running on port 35729
-2025-02-25 10:48:03 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 10:48:03 - Started EmployeePayrollAppApplication in 7.237 seconds (process running for 8.084)
-2025-02-25 10:48:15 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 10:48:15 - Graceful shutdown complete
-2025-02-25 10:48:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:48:15 - HikariPool-1 - Shutdown initiated...
-2025-02-25 10:48:15 - HikariPool-1 - Shutdown completed.
-2025-02-25 10:55:05 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 3548 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 10:55:05 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 10:55:05 - The following 1 profile is active: "dev"
-2025-02-25 10:55:05 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 10:55:05 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 10:55:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 10:55:07 - Finished Spring Data repository scanning in 48 ms. Found 0 JPA repository interfaces.
-2025-02-25 10:55:08 - Tomcat initialized with port 8080 (http)
-2025-02-25 10:55:08 - Starting service [Tomcat]
-2025-02-25 10:55:08 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 10:55:08 - Initializing Spring embedded WebApplicationContext
-2025-02-25 10:55:08 - Root WebApplicationContext: initialization completed in 2913 ms
-2025-02-25 10:55:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 10:55:09 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 10:55:09 - HHH000026: Second-level cache disabled
-2025-02-25 10:55:10 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 10:55:10 - HikariPool-1 - Starting...
-2025-02-25 10:55:10 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cd03172
-2025-02-25 10:55:10 - HikariPool-1 - Start completed.
-2025-02-25 10:55:10 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 10:55:10 - HHH10001005: Database info:
+2025-02-27 15:10:09 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:10:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:10:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:10:10 - LiveReload server is running on port 35729
+2025-02-27 15:10:10 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 15:10:10 - Started EmployeePayrollAppApplication in 6.793 seconds (process running for 7.665)
+2025-02-27 15:10:17 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 15:10:18 - Graceful shutdown complete
+2025-02-27 15:10:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:10:18 - HikariPool-1 - Shutdown initiated...
+2025-02-27 15:10:18 - HikariPool-1 - Shutdown completed.
+2025-02-27 15:10:23 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 14964 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:10:23 - The following 1 profile is active: "default"
+2025-02-27 15:10:23 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:10:23 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:10:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:10:25 - Finished Spring Data repository scanning in 34 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:10:26 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:10:26 - Starting service [Tomcat]
+2025-02-27 15:10:26 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:10:26 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:10:26 - Root WebApplicationContext: initialization completed in 2286 ms
+2025-02-27 15:10:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:10:26 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:10:26 - HHH000026: Second-level cache disabled
+2025-02-27 15:10:27 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:10:27 - HikariPool-1 - Starting...
+2025-02-27 15:10:27 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30d958bc
+2025-02-27 15:10:27 - HikariPool-1 - Start completed.
+2025-02-27 15:10:27 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:10:27 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -112,38 +1149,37 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 10:55:12 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 10:55:12 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:55:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 10:55:13 - LiveReload server is running on port 35729
-2025-02-25 10:55:13 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 10:55:13 - Started EmployeePayrollAppApplication in 8.21 seconds (process running for 9.065)
-2025-02-25 10:55:41 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 10:55:41 - Graceful shutdown complete
-2025-02-25 10:55:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:55:41 - HikariPool-1 - Shutdown initiated...
-2025-02-25 10:55:41 - HikariPool-1 - Shutdown completed.
-2025-02-25 10:56:03 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 21612 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 10:56:03 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 10:56:03 - The following 1 profile is active: "dev"
-2025-02-25 10:56:03 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 10:56:03 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 10:56:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 10:56:04 - Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
-2025-02-25 10:56:05 - Tomcat initialized with port 8080 (http)
-2025-02-25 10:56:05 - Starting service [Tomcat]
-2025-02-25 10:56:05 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 10:56:05 - Initializing Spring embedded WebApplicationContext
-2025-02-25 10:56:05 - Root WebApplicationContext: initialization completed in 2219 ms
-2025-02-25 10:56:06 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 10:56:06 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 10:56:06 - HHH000026: Second-level cache disabled
-2025-02-25 10:56:06 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 10:56:06 - HikariPool-1 - Starting...
-2025-02-25 10:56:07 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73df3ced
-2025-02-25 10:56:07 - HikariPool-1 - Start completed.
-2025-02-25 10:56:07 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 10:56:07 - HHH10001005: Database info:
+2025-02-27 15:10:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:10:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:10:28 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:10:29 - LiveReload server is running on port 35729
+2025-02-27 15:10:29 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 15:10:29 - Started EmployeePayrollAppApplication in 6.735 seconds (process running for 7.586)
+2025-02-27 15:10:34 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 15:10:35 - Graceful shutdown complete
+2025-02-27 15:10:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:10:35 - HikariPool-1 - Shutdown initiated...
+2025-02-27 15:10:35 - HikariPool-1 - Shutdown completed.
+2025-02-27 15:10:41 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 8668 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:10:41 - The following 1 profile is active: "default"
+2025-02-27 15:10:41 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:10:41 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:10:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:10:42 - Finished Spring Data repository scanning in 39 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:10:43 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:10:43 - Starting service [Tomcat]
+2025-02-27 15:10:43 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:10:43 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:10:43 - Root WebApplicationContext: initialization completed in 2546 ms
+2025-02-27 15:10:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:10:44 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:10:44 - HHH000026: Second-level cache disabled
+2025-02-27 15:10:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:10:44 - HikariPool-1 - Starting...
+2025-02-27 15:10:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2df935a1
+2025-02-27 15:10:45 - HikariPool-1 - Start completed.
+2025-02-27 15:10:45 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:10:45 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -151,44 +1187,211 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 10:56:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 10:56:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:56:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 10:56:09 - LiveReload server is running on port 35729
-2025-02-25 10:56:09 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 10:56:09 - Started EmployeePayrollAppApplication in 6.852 seconds (process running for 7.739)
-2025-02-25 10:56:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-25 10:56:21 - Initializing Servlet 'dispatcherServlet'
-2025-02-25 10:56:21 - Completed initialization in 1 ms
-2025-02-25 10:56:21 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@11c801a2
-2025-02-25 10:56:24 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@76e75fd7
-2025-02-25 10:56:28 - Deleted employee with ID: 1
-2025-02-25 10:56:33 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 10:56:33 - Graceful shutdown complete
-2025-02-25 10:56:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 10:56:33 - HikariPool-1 - Shutdown initiated...
-2025-02-25 10:56:33 - HikariPool-1 - Shutdown completed.
-2025-02-25 11:14:49 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 13008 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 11:14:49 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 11:14:49 - The following 1 profile is active: "dev"
-2025-02-25 11:14:49 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 11:14:49 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 11:14:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 11:14:51 - Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.
-2025-02-25 11:14:52 - Tomcat initialized with port 8080 (http)
-2025-02-25 11:14:52 - Starting service [Tomcat]
-2025-02-25 11:14:52 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 11:14:53 - Initializing Spring embedded WebApplicationContext
-2025-02-25 11:14:53 - Root WebApplicationContext: initialization completed in 3624 ms
-2025-02-25 11:14:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 11:14:53 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 11:14:53 - HHH000026: Second-level cache disabled
-2025-02-25 11:14:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 11:14:54 - HikariPool-1 - Starting...
-2025-02-25 11:14:55 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73df3ced
-2025-02-25 11:14:55 - HikariPool-1 - Start completed.
-2025-02-25 11:14:55 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 11:14:55 - HHH10001005: Database info:
+2025-02-27 15:10:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:10:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:10:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:10:47 - LiveReload server is running on port 35729
+2025-02-27 15:10:47 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 15:10:47 - Started EmployeePayrollAppApplication in 7.249 seconds (process running for 8.198)
+2025-02-27 15:10:50 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 15:10:50 - Graceful shutdown complete
+2025-02-27 15:10:50 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 15:10:50 - HikariPool-1 - Shutdown initiated...
+2025-02-27 15:10:50 - HikariPool-1 - Shutdown completed.
+2025-02-27 15:11:06 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 14608 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 15:11:06 - The following 1 profile is active: "default"
+2025-02-27 15:11:07 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 15:11:07 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 15:11:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 15:11:08 - Finished Spring Data repository scanning in 37 ms. Found 0 JPA repository interfaces.
+2025-02-27 15:11:10 - Tomcat initialized with port 8080 (http)
+2025-02-27 15:11:10 - Starting service [Tomcat]
+2025-02-27 15:11:10 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 15:11:10 - Initializing Spring embedded WebApplicationContext
+2025-02-27 15:11:10 - Root WebApplicationContext: initialization completed in 3341 ms
+2025-02-27 15:11:10 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 15:11:10 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 15:11:11 - HHH000026: Second-level cache disabled
+2025-02-27 15:11:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 15:11:11 - HikariPool-1 - Starting...
+2025-02-27 15:11:13 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:11:13 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:11:13 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2025-02-27 15:11:13 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 15:11:13 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 15:11:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 15:11:14 - HikariPool-1 - Starting...
+2025-02-27 15:11:15 - SQL Error: 1044, SQLState: 42000
+2025-02-27 15:11:15 - Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+2025-02-27 15:11:15 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:11:15 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+2025-02-27 15:11:15 - Stopping service [Tomcat]
+2025-02-27 15:11:15 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 15:11:15 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.bridgelabz.employee_payroll_app.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'localhost' to database 'jdbc:mysql://localhost:3306/employee_payroll_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+2025-02-27 21:00:16 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 184 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 21:00:16 - The following 1 profile is active: "default"
+2025-02-27 21:00:16 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 21:00:16 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 21:00:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 21:00:18 - Finished Spring Data repository scanning in 56 ms. Found 0 JPA repository interfaces.
+2025-02-27 21:00:20 - Tomcat initialized with port 8080 (http)
+2025-02-27 21:00:20 - Starting service [Tomcat]
+2025-02-27 21:00:20 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 21:00:20 - Initializing Spring embedded WebApplicationContext
+2025-02-27 21:00:20 - Root WebApplicationContext: initialization completed in 4662 ms
+2025-02-27 21:00:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 21:00:21 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 21:00:21 - HHH000026: Second-level cache disabled
+2025-02-27 21:00:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 21:00:22 - HikariPool-1 - Starting...
+2025-02-27 21:00:23 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e4e1729
+2025-02-27 21:00:23 - HikariPool-1 - Start completed.
+2025-02-27 21:00:24 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 21:00:24 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -196,48 +1399,37 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 11:14:57 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 11:14:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:14:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 11:14:58 - LiveReload server is running on port 35729
-2025-02-25 11:14:58 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 11:14:58 - Started EmployeePayrollAppApplication in 10.534 seconds (process running for 11.756)
-2025-02-25 11:16:06 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-25 11:16:06 - Initializing Servlet 'dispatcherServlet'
-2025-02-25 11:16:06 - Completed initialization in 2 ms
-2025-02-25 11:16:06 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [johnDoe]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@5c689e11,^[A-Z][a-z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:16:06 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [John123]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@5c689e11,^[A-Z][a-z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:16:10 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.updateEmployee(java.lang.Long,com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [janeDoe]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@5c689e11,^[A-Z][a-z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:16:10 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.updateEmployee(java.lang.Long,com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [Jane123]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@5c689e11,^[A-Z][a-z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:16:17 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [JohnDoe]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@5c689e11,^[A-Z][a-z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:16:20 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [JohnDoe]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@5c689e11,^[A-Z][a-z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:16:33 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.updateEmployee(java.lang.Long,com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [JaneDoe]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@5c689e11,^[A-Z][a-z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:17:38 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 11:17:38 - Graceful shutdown complete
-2025-02-25 11:17:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:17:38 - HikariPool-1 - Shutdown initiated...
-2025-02-25 11:17:38 - HikariPool-1 - Shutdown completed.
-2025-02-25 11:17:53 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 19204 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 11:17:53 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 11:17:53 - The following 1 profile is active: "dev"
-2025-02-25 11:17:53 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 11:17:53 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 11:17:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 11:17:55 - Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
-2025-02-25 11:17:56 - Tomcat initialized with port 8080 (http)
-2025-02-25 11:17:56 - Starting service [Tomcat]
-2025-02-25 11:17:56 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 11:17:56 - Initializing Spring embedded WebApplicationContext
-2025-02-25 11:17:56 - Root WebApplicationContext: initialization completed in 3090 ms
-2025-02-25 11:17:56 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 11:17:57 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 11:17:57 - HHH000026: Second-level cache disabled
-2025-02-25 11:17:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 11:17:57 - HikariPool-1 - Starting...
-2025-02-25 11:17:58 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36dbba43
-2025-02-25 11:17:58 - HikariPool-1 - Start completed.
-2025-02-25 11:17:58 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 11:17:58 - HHH10001005: Database info:
+2025-02-27 21:00:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 21:00:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:00:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 21:00:28 - LiveReload server is running on port 35729
+2025-02-27 21:00:28 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 21:00:28 - Started EmployeePayrollAppApplication in 13.992 seconds (process running for 15.777)
+2025-02-27 21:00:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 21:00:44 - Graceful shutdown complete
+2025-02-27 21:00:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:00:44 - HikariPool-1 - Shutdown initiated...
+2025-02-27 21:00:44 - HikariPool-1 - Shutdown completed.
+2025-02-27 21:00:56 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 16184 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 21:00:56 - The following 1 profile is active: "default"
+2025-02-27 21:00:56 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 21:00:56 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 21:00:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 21:00:58 - Finished Spring Data repository scanning in 53 ms. Found 0 JPA repository interfaces.
+2025-02-27 21:01:00 - Tomcat initialized with port 8080 (http)
+2025-02-27 21:01:00 - Starting service [Tomcat]
+2025-02-27 21:01:00 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 21:01:00 - Initializing Spring embedded WebApplicationContext
+2025-02-27 21:01:00 - Root WebApplicationContext: initialization completed in 4107 ms
+2025-02-27 21:01:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 21:01:01 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 21:01:01 - HHH000026: Second-level cache disabled
+2025-02-27 21:01:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 21:01:02 - HikariPool-1 - Starting...
+2025-02-27 21:01:03 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c00864
+2025-02-27 21:01:03 - HikariPool-1 - Start completed.
+2025-02-27 21:01:03 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 21:01:03 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -245,51 +1437,37 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 11:18:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 11:18:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:18:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 11:18:01 - LiveReload server is running on port 35729
-2025-02-25 11:18:01 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 11:18:01 - Started EmployeePayrollAppApplication in 9.266 seconds (process running for 10.31)
-2025-02-25 11:18:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-25 11:18:07 - Initializing Servlet 'dispatcherServlet'
-2025-02-25 11:18:07 - Completed initialization in 2 ms
-2025-02-25 11:18:07 - Retrieved employee with ID 1: null
-2025-02-25 11:18:07 - Employee with ID 1 not found
-2025-02-25 11:18:14 - Retrieved employee with ID 1: null
-2025-02-25 11:18:14 - Employee with ID 1 not found
-2025-02-25 11:18:51 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@6806c11d
-2025-02-25 11:18:55 - Retrieved employee with ID 1: com.bridgelabz.employee_payroll_app.model.Employee@6806c11d
-2025-02-25 11:18:55 - Updated employee: com.bridgelabz.employee_payroll_app.model.Employee@6806c11d
-2025-02-25 11:18:58 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@167d280b
-2025-02-25 11:19:01 - Retrieved employee with ID 1: com.bridgelabz.employee_payroll_app.model.Employee@6806c11d
-2025-02-25 11:19:01 - Updated employee: com.bridgelabz.employee_payroll_app.model.Employee@6806c11d
-2025-02-25 11:19:07 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 11:19:08 - Graceful shutdown complete
-2025-02-25 11:19:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:19:08 - HikariPool-1 - Shutdown initiated...
-2025-02-25 11:19:08 - HikariPool-1 - Shutdown completed.
-2025-02-25 11:22:40 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 22760 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 11:22:40 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 11:22:40 - The following 1 profile is active: "dev"
-2025-02-25 11:22:40 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 11:22:40 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 11:22:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 11:22:42 - Finished Spring Data repository scanning in 40 ms. Found 0 JPA repository interfaces.
-2025-02-25 11:22:43 - Tomcat initialized with port 8080 (http)
-2025-02-25 11:22:43 - Starting service [Tomcat]
-2025-02-25 11:22:43 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 11:22:43 - Initializing Spring embedded WebApplicationContext
-2025-02-25 11:22:43 - Root WebApplicationContext: initialization completed in 3141 ms
-2025-02-25 11:22:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 11:22:44 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 11:22:44 - HHH000026: Second-level cache disabled
-2025-02-25 11:22:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 11:22:45 - HikariPool-1 - Starting...
-2025-02-25 11:22:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d68b262
-2025-02-25 11:22:46 - HikariPool-1 - Start completed.
-2025-02-25 11:22:46 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 11:22:46 - HHH10001005: Database info:
+2025-02-27 21:01:05 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 21:01:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:01:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 21:01:07 - LiveReload server is running on port 35729
+2025-02-27 21:01:07 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 21:01:07 - Started EmployeePayrollAppApplication in 12.626 seconds (process running for 14.054)
+2025-02-27 21:01:25 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 21:01:25 - Graceful shutdown complete
+2025-02-27 21:01:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:01:25 - HikariPool-1 - Shutdown initiated...
+2025-02-27 21:01:25 - HikariPool-1 - Shutdown completed.
+2025-02-27 21:01:34 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 12400 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 21:01:34 - The following 1 profile is active: "default"
+2025-02-27 21:01:34 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 21:01:34 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 21:01:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 21:01:37 - Finished Spring Data repository scanning in 62 ms. Found 0 JPA repository interfaces.
+2025-02-27 21:01:39 - Tomcat initialized with port 8080 (http)
+2025-02-27 21:01:39 - Starting service [Tomcat]
+2025-02-27 21:01:39 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 21:01:39 - Initializing Spring embedded WebApplicationContext
+2025-02-27 21:01:39 - Root WebApplicationContext: initialization completed in 4855 ms
+2025-02-27 21:01:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 21:01:40 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 21:01:40 - HHH000026: Second-level cache disabled
+2025-02-27 21:01:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 21:01:41 - HikariPool-1 - Starting...
+2025-02-27 21:01:42 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30d958bc
+2025-02-27 21:01:42 - HikariPool-1 - Start completed.
+2025-02-27 21:01:42 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 21:01:42 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -297,47 +1475,37 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 11:22:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 11:22:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:22:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 11:22:49 - LiveReload server is running on port 35729
-2025-02-25 11:22:49 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 11:22:49 - Started EmployeePayrollAppApplication in 9.864 seconds (process running for 11.039)
-2025-02-25 11:22:53 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-25 11:22:53 - Initializing Servlet 'dispatcherServlet'
-2025-02-25 11:22:53 - Completed initialization in 2 ms
-2025-02-25 11:22:54 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [johnDoe]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@3dbeebbe,^[A-Z][a-zA-Z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:22:54 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.employee_payroll_app.model.Employee com.bridgelabz.employee_payroll_app.controller.EmployeeRestController.createEmployee(com.bridgelabz.employee_payroll_app.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [John123]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@3dbeebbe,^[A-Z][a-zA-Z]*$]; default message [Name must start with a capital letter and contain only alphabets.]] ]
-2025-02-25 11:23:06 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@f714580
-2025-02-25 11:23:11 - Created employee: com.bridgelabz.employee_payroll_app.model.Employee@2d0501fd
-2025-02-25 11:23:16 - Retrieved employee with ID 1: com.bridgelabz.employee_payroll_app.model.Employee@f714580
-2025-02-25 11:23:16 - Updated employee: com.bridgelabz.employee_payroll_app.model.Employee@f714580
-2025-02-25 11:23:23 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 11:23:24 - Graceful shutdown complete
-2025-02-25 11:23:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:23:24 - HikariPool-1 - Shutdown initiated...
-2025-02-25 11:23:24 - HikariPool-1 - Shutdown completed.
-2025-02-25 11:31:54 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 3552 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
-2025-02-25 11:31:54 - Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-02-25 11:31:54 - The following 1 profile is active: "dev"
-2025-02-25 11:31:54 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-25 11:31:54 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-25 11:31:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 11:31:56 - Finished Spring Data repository scanning in 45 ms. Found 0 JPA repository interfaces.
-2025-02-25 11:31:57 - Tomcat initialized with port 8080 (http)
-2025-02-25 11:31:58 - Starting service [Tomcat]
-2025-02-25 11:31:58 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-25 11:31:58 - Initializing Spring embedded WebApplicationContext
-2025-02-25 11:31:58 - Root WebApplicationContext: initialization completed in 3367 ms
-2025-02-25 11:31:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 11:31:58 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-25 11:31:58 - HHH000026: Second-level cache disabled
-2025-02-25 11:31:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 11:31:59 - HikariPool-1 - Starting...
-2025-02-25 11:32:00 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@674d2e6f
-2025-02-25 11:32:00 - HikariPool-1 - Start completed.
-2025-02-25 11:32:00 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 11:32:00 - HHH10001005: Database info:
+2025-02-27 21:01:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 21:01:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:01:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 21:01:46 - LiveReload server is running on port 35729
+2025-02-27 21:01:46 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 21:01:46 - Started EmployeePayrollAppApplication in 13.0 seconds (process running for 14.4)
+2025-02-27 21:02:01 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 21:02:01 - Graceful shutdown complete
+2025-02-27 21:02:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:02:01 - HikariPool-1 - Shutdown initiated...
+2025-02-27 21:02:01 - HikariPool-1 - Shutdown completed.
+2025-02-27 21:02:16 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 14372 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 21:02:16 - The following 1 profile is active: "default"
+2025-02-27 21:02:17 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 21:02:17 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 21:02:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 21:02:19 - Finished Spring Data repository scanning in 62 ms. Found 0 JPA repository interfaces.
+2025-02-27 21:02:21 - Tomcat initialized with port 8080 (http)
+2025-02-27 21:02:21 - Starting service [Tomcat]
+2025-02-27 21:02:21 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 21:02:21 - Initializing Spring embedded WebApplicationContext
+2025-02-27 21:02:21 - Root WebApplicationContext: initialization completed in 4182 ms
+2025-02-27 21:02:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 21:02:21 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 21:02:22 - HHH000026: Second-level cache disabled
+2025-02-27 21:02:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 21:02:23 - HikariPool-1 - Starting...
+2025-02-27 21:02:23 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6def1832
+2025-02-27 21:02:23 - HikariPool-1 - Start completed.
+2025-02-27 21:02:23 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 21:02:24 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -345,18 +1513,14 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-25 11:32:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 11:32:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:32:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 11:32:03 - LiveReload server is running on port 35729
-2025-02-25 11:32:03 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 11:32:03 - Started EmployeePayrollAppApplication in 10.155 seconds (process running for 11.325)
-2025-02-25 11:32:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-25 11:32:07 - Initializing Servlet 'dispatcherServlet'
-2025-02-25 11:32:07 - Completed initialization in 2 ms
-2025-02-25 11:32:18 - Resolved [com.bridgelabz.employee_payroll_app.exception.EmployeeNotFoundException: Employee with ID 999 not found]
-2025-02-25 11:32:37 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25 11:32:38 - Graceful shutdown complete
-2025-02-25 11:32:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 11:32:38 - HikariPool-1 - Shutdown initiated...
-2025-02-25 11:32:38 - HikariPool-1 - Shutdown completed.
+2025-02-27 21:02:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 21:02:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:02:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 21:02:27 - LiveReload server is running on port 35729
+2025-02-27 21:02:27 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 21:02:27 - Started EmployeePayrollAppApplication in 12.254 seconds (process running for 13.665)
+2025-02-27 21:02:49 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 21:02:49 - Graceful shutdown complete
+2025-02-27 21:02:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:02:49 - HikariPool-1 - Shutdown initiated...
+2025-02-27 21:02:49 - HikariPool-1 - Shutdown completed.
