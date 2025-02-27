@@ -1524,3 +1524,41 @@ Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'Divit'@'loc
 2025-02-27 21:02:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-02-27 21:02:49 - HikariPool-1 - Shutdown initiated...
 2025-02-27 21:02:49 - HikariPool-1 - Shutdown completed.
+2025-02-27 21:25:59 - Starting EmployeePayrollAppApplication using Java 19.0.2 with PID 19320 (C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app\target\classes started by hnypa in C:\Users\hnypa\OneDrive\Desktop\CodeXperience\SpringBoot\Employee-Payroll-App\employee-payroll-app)
+2025-02-27 21:25:59 - The following 1 profile is active: "default"
+2025-02-27 21:25:59 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 21:25:59 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 21:26:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27 21:26:01 - Finished Spring Data repository scanning in 52 ms. Found 0 JPA repository interfaces.
+2025-02-27 21:26:03 - Tomcat initialized with port 8080 (http)
+2025-02-27 21:26:03 - Starting service [Tomcat]
+2025-02-27 21:26:03 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 21:26:03 - Initializing Spring embedded WebApplicationContext
+2025-02-27 21:26:03 - Root WebApplicationContext: initialization completed in 4325 ms
+2025-02-27 21:26:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27 21:26:04 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27 21:26:04 - HHH000026: Second-level cache disabled
+2025-02-27 21:26:05 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27 21:26:05 - HikariPool-1 - Starting...
+2025-02-27 21:26:06 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6def1832
+2025-02-27 21:26:06 - HikariPool-1 - Start completed.
+2025-02-27 21:26:06 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27 21:26:06 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27 21:26:09 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27 21:26:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:26:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 21:26:11 - LiveReload server is running on port 35729
+2025-02-27 21:26:11 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 21:26:11 - Started EmployeePayrollAppApplication in 13.982 seconds (process running for 15.506)
+2025-02-27 21:26:16 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 21:26:17 - Graceful shutdown complete
+2025-02-27 21:26:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27 21:26:17 - HikariPool-1 - Shutdown initiated...
+2025-02-27 21:26:17 - HikariPool-1 - Shutdown completed.
